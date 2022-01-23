@@ -78,7 +78,7 @@ plote <- dat %>%
   geom_polygon(data = pd, mapping = aes(x = x, y=y), alpha = 0.2, fill = "orange") 
 
 #++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
-# (b) TITAN approach: oligotrophic species  ----
+# (b) TITAN approach: total numnber species  ----
 #++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 
 # Load and prepare site x species matrix
@@ -117,7 +117,7 @@ pd <- tibble(
 )
 plotb <- d %>% 
   ggplot(aes(y = aID_SP, x = `50%`)) +
-  geom_point(col = "grey") +
+  geom_point(col = "grey", cex = 0.3) +
   geom_errorbar(aes( xmin = `5%`, xmax = `90%`), width = 0, col = "grey") +
   geom_polygon(data = pd, mapping = aes(x = x, y=y), alpha = 0.2, fill = "orange") +
   geom_vline(xintercept = titan_all$sumz.cp["sumz-", "0.50"], col = "orange") +
