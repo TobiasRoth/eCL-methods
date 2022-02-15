@@ -126,7 +126,7 @@ plotb <- d %>%
     title = "Threshold Indicator Taxa Analysis\n(TITAN)",
     subtitle = paste("(b) Estimated critical load: ", titan_all$sumz.cp["sumz-", "0.50"] %>% round(1), "kg"), 
     x = "",
-    y = "Negative indicator species"
+    y = "Total number of species"
   ) +
   theme(axis.text.y = element_blank())
 
@@ -179,7 +179,7 @@ plotf <- d %>%
   labs(
     subtitle = paste("(f) Estimated critical load: ", sprintf( "%.1f", titan_oligo$sumz.cp["sumz-", "0.50"]), "kg"), 
     x = "",
-    y = "Negative indicator species"
+    y = "Number of oligotrophic species"
   ) +
   theme(axis.text.y = element_blank())
 
