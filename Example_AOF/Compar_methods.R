@@ -14,7 +14,7 @@ library(rjags)
 library(TITAN2)
 
 # Load data
-dat <- read_excel("Example_AOF_git_ignored/0atlanticOakforests_forAppendixCLempN.xlsx", sheet = "Wilkins_Aherne_2016_data", skip = 1) %>% 
+dat <- read_excel("Example_AOF/0atlanticOakforests_forAppendixCLempN.xlsx", sheet = "Wilkins_Aherne_2016_data", skip = 1) %>% 
   mutate(
     Ndep = `Total NDep`,
     SR = Richness,
