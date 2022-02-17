@@ -55,7 +55,7 @@ plota <- dat %>%
 
 # Make plot with oligotrophic species
 pd <- tibble(
-  x = c(1.8, 2.8, 2.8, 1.8),
+  x = c(2, 3, 3, 2),
   y = c(0, 0, 30, 30)
 )
 plote <- dat %>% 
@@ -70,7 +70,7 @@ plote <- dat %>%
   geom_point() +
   geom_errorbar(aes(ymin = lo, ymax = up), width = 0.2) +
   labs(
-    subtitle = "(e) Estimated critical load: ~10 kg", 
+    subtitle = "(e) Estimated critical load: ~12.5 kg", 
     x = "",
     y = "Number of oligotrophic species"
   ) +

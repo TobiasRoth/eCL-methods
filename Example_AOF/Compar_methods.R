@@ -53,7 +53,7 @@ plota <- dat %>%
   geom_errorbar(aes(ymin = lo, ymax = up), width = 0.2) +
   labs(
     title = "Visual inspection of gradient categories\n",
-    subtitle = "(a) Estimated critical load: ~7.5 kg", 
+    subtitle = "(a) Estimated critical load: ~10 kg", 
     x = "",
     y = "Total number of species"
   ) +
@@ -77,7 +77,7 @@ plote <- dat %>%
   geom_point() +
   geom_errorbar(aes(ymin = lo, ymax = up), width = 0.2) +
   labs(
-    subtitle = "(e) Estimated critical load: ~7.5 kg", 
+    subtitle = "(e) Estimated critical load: ~10 kg", 
     x = "",
     y = "Number of indicator species"
   ) +
@@ -215,7 +215,7 @@ plotc <- dat %>%
   geom_segment(aes(x = cl, y = lowintercept, xend = cl , yend = 0), arrow = arrow(length = unit(0.3, "cm")), col = "orange") +
   labs(
     title = "Point at which significance reduction\ncan be observed",
-    subtitle = paste("(c) Estimated critical load:", cl, "kg"), 
+    subtitle = paste("(c) Estimated critical load:", round(cl, 1), "kg"), 
     x = expression(paste("Nitrogen deposition [kg N ", ha^-1, " ", yr^-1, "]")),
     y = "Total number of species"
   ) 
